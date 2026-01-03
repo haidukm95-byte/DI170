@@ -1,0 +1,25 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/Ex1.py
+suggestions for improvement:
+- The `Cat` class should not inherit from `Pets`. `Cat` is a type of animal to be managed by the `Pets` class, not a specialization of the `Pets` class itself. This fundamentally misunderstands the relationship between the classes as defined in Exercise 1.
+- The additional methods `bride`, `sing`, `color`, and `eyes` added to the cat classes are not required by the exercise, and thus represent feature creep. It negatively impacts correctness.
+- The `walk` method in `Pets` prints the returned string, whereas the prompt instructions were to print the result of calling the `walk()` method on each cat in the list
+- Remove unnecessary calls to `print` within the constructors of `Cat` and derived classes. The instructions don't ask for printing details during instantiation; keep constructors clean and focused on object initialization.
+Correctness: 40%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/Ex2.py
+suggestions for improvement:
+- Consider returning values from the `bark` and `fight` methods instead of printing directly. This allows for greater flexibility in how the information is used.
+- The print statement in the `__init__` method could be moved outside the class to the main part of the code for better separation of concerns.
+Correctness: 100%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/Ex3.py
+suggestions for improvement:
+- In the `play` method of `PetDog`, the instructions specify that the method should print that all dog instances in `*args` play together, but the current implementation only prints that the calling instance plays. Refactor the code to conform with the prompt.
+- In the `Dog` class, the `bark` method should return the text rather than print it for more flexibility and in order to conform with the prompt's test instructions.
+Correctness: 90%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/Ex4.py
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
