@@ -1,0 +1,45 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP1.py
+suggestions for improvement:
+- Consider adding a __str__ method to provide a user-friendly string representation, separate from __repr__ which is more for debugging.
+- The code could be slightly more concise by using a conditional expression for pluralizing the currency in `__repr__`.
+Correctness: 90%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP3.py
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each function and section of code.
+- The variable name `result_str` could be shortened to `result` in the `get_random_string` function.
+Correctness: 100%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP4.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP5.py
+suggestions for improvement:
+- The provided code calculates the time left until January 1, 2027, but the exercise asks to calculate the time left until January 1st of the *next* year, not a fixed year like 2027.
+Correctness: 0.0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP6.py
+suggestions for improvement:
+- The code should be encapsulated within a function to adhere to the instructions. This makes the code reusable and organized.
+- The date format should not be hardcoded to allow for the user to enter it as an argument. The function should accept the birthdate as an argument.
+Correctness: 20%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Week_3/W3D4XP7.py
+suggestions for improvement:
+- Create a function to encapsulate the user generation logic as instructed in Exercise 7.
+- Avoid using separate lists for names, addresses, and language codes; directly create dictionaries within the loop for better readability and efficiency.
+- The final `print(users_list)` statement displays just the list of names, which is not the complete list of dictionaries as intended. It should print the `users_dict_list`.
+Correctness: 70%
+-----
