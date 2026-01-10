@@ -1,8 +1,14 @@
+import os
+
 class AnagramChecker:
     def __init__(self):
         # Load the word list from file once when the class is initialized
         try:
-            with open('words.txt') as f:
+            # Get the directory where this script is located
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            words_file = os.path.join(script_dir, 'words.txt')
+
+            with open(words_file) as f:
                 self.word_list = [w.strip().upper() for w in f.readlines()]
         except FileNotFoundError:
             print("Error: 'words.txt' file not found.")

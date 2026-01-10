@@ -1,4 +1,4 @@
-import anagram_checker
+from anagram_checker import AnagramChecker
 
 print("WELCOME TO THE ANAGRAM CHECKER V 1.0!")
 end=("""
@@ -28,7 +28,7 @@ MENU COMMANDS:
 
 def gameplay():
     # Create the AnagramChecker instance once (loads word list only once)
-    checker = anagram_checker.AnagramChecker()
+    checker = AnagramChecker()
 
     while True:
         word_input=input('Please type here any word: ').strip()
@@ -54,6 +54,7 @@ This is a valid English word.
 This is not a valid English word.
 Try one more time.
 ''')
+            break
         
             
 main()
