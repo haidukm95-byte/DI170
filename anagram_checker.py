@@ -2,9 +2,16 @@ class AnagramChecker:
     def __init__(self, word):
         #1. sets the word as an attribute
         self.word=word
-        with open('words.txt') as f:
-            word_list=f.readlines()
-            self.word_list=word_list
+        try:
+            with open('words.txt') as f:
+                word_list = f.readlines()
+                self.word_list = word_list
+        except FileNotFoundError:
+            print("Error: 'words.txt' file not found.")
+            self.word_list = []
+        except Exception as e:
+            print(f"Error reading word list: {e}")
+            self.word_list = []
         
     def isvalid_word(self):
         # Strip newlines and convert to uppercase for comparison
