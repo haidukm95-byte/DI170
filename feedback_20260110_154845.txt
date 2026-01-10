@@ -1,0 +1,24 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The file path for loading the word list is hardcoded. It should be configurable or relative to the script's location.
+- The `isvalid_word` method name should match the specification `is_valid_word`.
+- The anagram finding logic can be improved. For very large word lists, the performance will suffer due to the repeated sorting in the loop.
+- Consider using a dictionary to store words by their sorted form for faster anagram lookup.
+Correctness: 75%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- The code lacks the implementation of the `AnagramChecker` class and its methods as described in the instructions. It relies on an external `anagram_checker` module, but there is no provided code for that module to assess. Therefore, it's impossible to determine if the code correctly implements the core functionality of the anagram checker.
+- The main function handles the user interface, which aligns with the instructions, but the critical anagram logic is missing.
+- Without the `anagram_checker` module's code, I cannot evaluate its readability, performance, or security.
+Correctness: 0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/words.txt
+suggestions for improvement:
+- This looks like a text file containing a list of English words, but without the context of the other files, and the `AnagramChecker` class it's impossible to evaluate whether it is the correct file or not.
+- It's also not a Python file as required by the instructions.
+- This file contains a word list, not code, and therefore cannot directly address the requirements. It's raw data meant to be consumed by the AnagramChecker class.  It needs to be a zip archive, not a raw txt file. This file is part of the dataset used to evaluate the created class.
+- This code is just a long list of words and does not address any of the requirements outlined in the instructions.  It does not implement the AnagramChecker class or any of its methods. It does not create an anagrams.py file nor provide any UI functionality.  Therefore, it is completely irrelevant to the problem.
+- Because the text provides the dataset to be used and is not supposed to have any program logic, the readability, security, and performance aspects are not evaluated.
+Correctness: 0.0%
+-----
