@@ -16,7 +16,7 @@ MENU COMMANDS:
 "Q" for quit 
 '''
         print(menu)
-        choice=input('What`s your choice: ')
+        choice=input('What\'s your choice: ')
         if choice.strip().upper()=='Q':
             print('See you soon:)')
             print(end)
@@ -27,8 +27,11 @@ MENU COMMANDS:
             print('Invalid choice. Please enter S or Q.')
 
 def gameplay():
+    # Create the AnagramChecker instance once (loads word list only once)
+    checker = anagram_checker.AnagramChecker()
+
     while True:
-        word_input=input(f'Please type here any word: ').strip()
+        word_input=input('Please type here any word: ').strip()
         if not word_input:
             print('Please enter a valid word.')
             continue
@@ -36,12 +39,11 @@ def gameplay():
             print('Please enter only alphabetic characters')
             continue
 
-        checker=anagram_checker.AnagramChecker(word_input)
-        if checker.isvalid_word():
+        if checker.isvalid_word(word_input):
             print(f'''Your word: "{word_input}"
 This is a valid English word.
 ''')
-            anagrams = checker.get_anagrams()
+            anagrams = checker.get_anagrams(word_input)
             if anagrams:
                 print(f'Anagrams for your word: {", ".join(anagrams)}')
             else:
@@ -50,7 +52,9 @@ This is a valid English word.
         else:
             print(f'''Your word: "{word_input}"
 This is not a valid English word.
+Try one more time.
 ''')
+        
             
 main()
 
