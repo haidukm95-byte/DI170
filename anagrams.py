@@ -28,9 +28,12 @@ MENU COMMANDS:
 
 def gameplay():
     while True:
-        word_input=input(f'Please type here any word: ')
+        word_input=input(f'Please type here any word: ').strip()
         if not word_input:
             print('Please enter a valid word.')
+            continue
+        if not word_input.isalpha():
+            print('Please enter only alphabetic characters')
             continue
 
         checker=anagram_checker.AnagramChecker(word_input)
@@ -38,16 +41,16 @@ def gameplay():
             print(f'''Your word: "{word_input}"
 This is a valid English word.
 ''')
-            print(f'Anagrams for your word: {checker.get_anagrams()}')
-            break
-        elif bool(checker)==False:
-            print('No anagrams were found.')
+            anagrams = checker.get_anagrams()
+            if anagrams:
+                print(f'Anagrams for your word: {", ".join(anagrams)}')
+            else:
+                print('No anagrams were found for this word.')
             break
         else:
             print(f'''Your word: "{word_input}"
 This is not a valid English word.
 ''')
-            break
             
 main()
 

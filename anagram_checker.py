@@ -25,17 +25,5 @@ class AnagramChecker:
 
         return anagrams
         
-            
 
-
-        
-
-
-    
-    # check if the word matches the existing words list
-
-
-
-
-meat = AnagramChecker('meat')
 
