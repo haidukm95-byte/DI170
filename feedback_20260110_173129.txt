@@ -1,0 +1,16 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The instructions specify that the init method should load the word list file into a variable. This has been done correctly.
+- The instructions specify that the is_valid_word method should check if a given word is a valid word. The code implements this functionality well.
+- The instructions specify that the get_anagrams method should find all anagrams for the given word. The code implements this, including the check for word validity within the anagram search.
+- The use of try-except blocks for file handling improves robustness, especially in case of missing or corrupted files. Consider logging the exceptions for debugging purposes.
+- The method names do not follow PEP 8 guidelines. `isvalid_word` should be `is_valid_word`.
+Correctness: 70%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- Consider moving the menu and end message to the `main` function to keep all the user interface elements in one place.
+- The logic for checking valid input could be slightly improved for better readability, maybe consider separating the input validation into its own function.
+- The AnagramChecker instance is created in `gameplay()` which can be considered efficient, it prevents reloading the wordlist every time the user wants to check a new word.
+Correctness: 100%
+-----
