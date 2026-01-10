@@ -1,0 +1,31 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The `__init__` method should load the word list file into a variable, so that it can be searched later on in the code and take no parameters (only self). Currently, it is taking in 'word' which does not follow the instructions. Fix the __init__ method to follow the instructions.
+- Separate the AnagramChecker class and the UI logic into two different files as described in the instructions (anagram_checker.py and anagrams.py).
+- The download file that is provided is a zipped file and the instructions don't mention unzipping the file which is an important detail to include. Ensure that your code can unzip the file or state in the instructions that the user must manually unzip the file.
+- Implement input validation as described in point 4.2 in the instructions. The current code does not include any validation of user input.
+- Implement the UI as described in point 4 in the instructions. The current code does not include the required UI functionality.
+- Remove the last line of the code (meat = AnagramChecker('meat')). This line is only for testing and does not belong to the class definition.
+Correctness: 60%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- The code in `anagrams.py` depends on a class `AnagramChecker` in a separate file `anagram_checker.py`, but the submission doesn't include the code for the `AnagramChecker` class itself. Therefore, the submission cannot be evaluated for correctness, readability, performance, or security, as it represents an incomplete solution.
+- The provided code does not fully implement the user interface requirements as described in the prompt. Specifically, the input validation in `anagrams.py` is incomplete and relies on a method `isvalid_word()` from `anagram_checker.py` which is not provided. It also relies on the dunder method `__bool__` to check that it contains anagrams, but again, without the `anagram_checker.py` code, it's impossible to tell if it correctly assesses.
+- Error handling should be improved to gracefully handle cases where the word list file is not found or is in an unexpected format.
+Correctness: 0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/words.txt
+suggestions for improvement:
+- This file appears to be a dictionary of English words and does not contain any code, therefore it cannot be evaluated for correctness with respect to the given instructions, which involve creating Python classes and methods.
+- Since this is not code, readability, performance, and security are not applicable.
+- This code provides data. It is not code to be graded.
+- This is a text file and is not a Python program, hence cannot be checked for correctness against the instructions.
+Correctness: 0.0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.cpython-314.pyc
+suggestions for improvement:
+- The provided code appears to be a compiled `.pyc` file, not the original `.py` source code. This makes it impossible to properly assess the code's functionality, readability, performance, and security.
+- Decompile the code and submit the `.py` file so that it can be properly assessed.
+Correctness: 70%
+-----
