@@ -1,0 +1,15 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- The code in `anagrams.py` does implement the menu, input validation, and output formatting as described in the instructions. However, the most crucial part, the actual `AnagramChecker` class and its methods, is missing. The provided `anagrams.py` relies on an external `anagram_checker.py` which isn't given, so the functionality of finding valid words and anagrams is not implemented here, meaning the code cannot fully solve the problem.
+- The code needs to have `AnagramChecker` created in a separate file, as requested in instructions
+- The UI should be made to run until a valid word is written, as shown in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The file loading should handle the zip file provided instead of a plain text file named 'words.txt'.
+- The isvalid_word method name does not match the instructions, should be `is_valid_word`.
+- The handling of the FileNotFoundError is good, but the error message could be more informative, indicating the expected file name.
+- Consider improving performance by using a dictionary to store the sorted word lists, instead of sorting each word on every comparison.
+Correctness: 70%
+-----
