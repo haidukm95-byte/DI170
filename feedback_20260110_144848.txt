@@ -1,0 +1,24 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The `__init__` method should load the word list from the file, but it's currently taking a word as an argument, which isn't the intention. It should load the word list upon instantiation of the AnagramChecker class.
+- The file path 'words.txt' is hardcoded. The instructions suggest downloading a specific file (sowpods.zip), but this isn't reflected in the code. This could lead to issues if the file isn't present or named differently.
+- The code uses a linear search through the `word_list` which is inefficient for larger word lists. Consider using a set for faster lookups in `isvalid_word`.
+- The AnagramChecker class is instantiated incorrectly. The word is passed during initialization, but it should be passed when the `is_valid_word` or `get_anagrams` functions are called.
+- The code should handle potential file errors, such as the file not existing or not being readable.
+Correctness: 60%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- The code is missing the `AnagramChecker` class implementation, which is a core requirement of the problem. The `anagrams.py` file calls methods from the non-existent class, leading to errors.
+- The task requires creating two files, `anagram_checker.py` and `anagrams.py`, with distinct responsibilities. The provided code exists only as one file and misses crucial OOP implementation.
+- The program doesn't handle the zipped file provided and load words from it for validation and anagram generation.
+Correctness: 0%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/words.txt
+suggestions for improvement:
+- This code represents a word list and not the code to implement the AnagramChecker class or any part of the anagrams.py program.
+- Therefore it is unrelated to the intended goal of this exercise.
+- This file contains a long word list, which is unrelated to the code logic itself, and cannot be reviewed without the remaining code files.
+- This is just a text data file of valid English words, and not code. It cannot be assessed for readability, performance or security.
+Correctness: 0.0%
+-----
