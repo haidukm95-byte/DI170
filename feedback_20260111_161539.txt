@@ -1,0 +1,13 @@
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagram_checker.py
+suggestions for improvement:
+- The `is_anagram` method is missing. While the logic is incorporated within `get_anagrams`, creating a dedicated method as instructed would improve modularity.
+- Consider separating the file loading logic into its own method for better organization and testability.
+- Handle potential errors during file reading more gracefully, perhaps logging the error instead of just printing to the console.
+Correctness: 70%
+-----
+URL: https://github.com/haidukm95-byte/DI170/blob/Anagram_checker/anagrams.py
+suggestions for improvement:
+- Consider moving the menu printing into its own function for better organization.
+- The 'end' string is printed only when quitting. Consider printing it after a game is played as well.
+Correctness: 100%
+-----
