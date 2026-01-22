@@ -5,5 +5,5 @@ CREATE TABLE Countries(
     flag TEXT NOT NULL, 
     subregion VARCHAR(200), 
     population INTEGER NOT NULL
-
     );
+
