@@ -11,15 +11,19 @@
 //* * * *  
 //* * * * *
 //* * * * * *
-let arr=''
+
+//solution with single loop
+let starPattern=''
 for (let i=1; i<=6; i++) {
-    arr += '*';
-    console.log(arr)
+    arr += '* ';
+    console.log(starPattern)
 }
 
+//solution with nested loops
 for (let j=1; j<=6; j++) {
-    let arr2='';
+    let currentLine='';
     for (let k=0; k<j; k++) {
-        arr2+='*'
+        arr2+='* '
+        console.log(currentLine)
     }
 }
