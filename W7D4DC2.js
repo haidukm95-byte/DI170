@@ -15,7 +15,7 @@
 //solution with single loop
 let starPattern=''
 for (let i=1; i<=6; i++) {
-    arr += '* ';
+    starPattern += '* ';
     console.log(starPattern)
 }
 
@@ -23,7 +23,7 @@ for (let i=1; i<=6; i++) {
 for (let j=1; j<=6; j++) {
     let currentLine='';
     for (let k=0; k<j; k++) {
-        arr2+='* '
-        console.log(currentLine)
+        currentLine+='* '
     }
+    console.log(currentLine)
 }
